@@ -1,4 +1,4 @@
-export default function Ribbon({ w, h }) {
+export default function Instadapp({ w, h }) {
   return (
     <svg 
       viewBox="0 0 40 40" 

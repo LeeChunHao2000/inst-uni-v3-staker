@@ -5,7 +5,7 @@ import { FiSun, FiMoon } from 'react-icons/fi'
 import { useColorMode, useColorModeValue } from '@chakra-ui/color-mode'
 import { Box, Flex, LinkBox, LinkOverlay } from '@chakra-ui/layout'
 import { Heading, Text, Center } from '@chakra-ui/react'
-import Ribbon from '../ribbon'
+import Instadapp from '../Instadapp'
 import { useWeb3 } from '../../contexts/useWeb3'
 
 import UserAddress from './wallet'
@@ -28,7 +28,7 @@ const Header = () => {
         maxW={{ base: '100%', md: 960 }}
       >
         <Flex width={['auto', 'auto']}>
-          <Ribbon w={64} h={64} />
+          <Instadapp w={64} h={64} />
           <Box ml="2">
             <Heading size="lg" mb={2}>
               INST LP Staking
