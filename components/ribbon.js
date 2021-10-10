@@ -1,26 +1,16 @@
 export default function Ribbon({ w, h }) {
   return (
-    <svg
+    <svg 
+      viewBox="0 0 40 40" 
+      fill="rgb(169, 57, 255)" 
+      xmlns="http://www.w3.org/2000/svg" 
+      height={w ? h : 96}
       width={w ? w : 96}
-      height={h ? h : 96}
-      viewBox="0 0 96 96"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <g clipPath="url(#clip0)">
-        <circle cx="48" cy="48" r="48" fill="#FF385C" />
-        <path
-          d="M3 71.9068L47.8065 25L71.61 49.5036L47.5 75.5"
-          stroke="white"
-          strokeWidth="6"
-          strokeLinecap="square"
-        />
-      </g>
-      <defs>
-        <clipPath id="clip0">
-          <rect width="96" height="96" rx="48" fill="white" />
-        </clipPath>
-      </defs>
+      class="css-yiiefv">
+
+     <path 
+      d="M20 38.275c0 .993.805 1.806 1.79 1.718C31.997 39.085 40 30.48 40 20 40 9.52 31.997.915 21.79.006 20.805-.08 20 .732 20 1.725V7.82c0 .993.808 1.781 1.783 1.951 4.864.848 8.562 5.105 8.562 10.229 0 5.124-3.698 9.38-8.562 10.229-.975.17-1.783.958-1.783 1.951v6.095zM13.793 3.39c0-1.222-1.191-2.085-2.293-1.565A20.08 20.08 0 000 20a20.08 20.08 0 0011.5 18.175c1.102.52 2.293-.342 2.293-1.564V3.39z" fill="#3F75FF">
+     </path>
     </svg>
   )
 }

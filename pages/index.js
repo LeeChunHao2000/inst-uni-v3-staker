@@ -39,11 +39,11 @@ import { comma } from '../utils/helpers'
 
 // RBN PROGRAM
 const IncentiveKey = [
-  '0x6123B0049F904d730dB3C36a31167D9d4121fA6B',
-  '0x94981F69F7483AF3ae218CbfE65233cC3c60d93a',
+  '0x6f40d4a6237c257fff2db00fa0510deeecd303eb',
+  '0xcba27c8e7115b4eb50aa14999bc0866674a96ecb',
   1633694400,
-  1638878400,
-  '0xDAEada3d210D2f45874724BeEa03C7d4BBD41674'
+  1642176000,
+  '0xa8c31E39e40E6765BEdBd83D92D6AA0B33f1CCC5'
 ]
 
 const programEmissions = 10000000
@@ -119,7 +119,7 @@ export default function Home() {
         >
           <Flex w="100%" maxW={['100%', 960]} mb={8}>
             <Stat>
-              <StatLabel>RBN Price</StatLabel>
+              <StatLabel>INST Price</StatLabel>
               <StatNumber>
                 {pool.tvl ? `$${commas(pool.token)}` : '$0.0'}
               </StatNumber>

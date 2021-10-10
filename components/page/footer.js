@@ -4,13 +4,18 @@ import useWeb3 from '../../contexts/useWeb3'
 
 const links = [
   {
-    label: 'github',
+    label: 'Github',
     href: 'https://github.com/l3wi/univ3-staking',
     isExternal: true
   },
   {
-    label: 'lewi',
+    label: 'Author',
     href: 'https://twitter.com/lewifree',
+    isExternal: true
+  },
+  {
+    label: 'Forker',
+    href: 'https://twitter.com/ChunHaoLee_',
     isExternal: true
   }
 ]

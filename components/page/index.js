@@ -22,18 +22,18 @@ const Layout = ({ children, title }) => {
         <link rel="icon" href="/favicon.png" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:creator" content="@lewifree" />
+        <meta name="twitter:creator" content="@ChunHaoLee" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://staker.projects.sh" />
-        <meta property="og:title" content="Ribbon (RBN) staker" />
+        <meta property="og:url" content="" />
+        <meta property="og:title" content="Instadapp (INST) staker" />
         <meta
           property="og:description"
-          content="A staking UI for the Ribbon reward program."
+          content="A staking UI for the INST reward program."
         />
         <meta property="og:site_name" content="Uniswap V3 staker" />
         <meta
           property="og:image"
-          content="https://staker.projects.sh/image.png"
+          content="/image.png"
         />
       </Head>
       <Alerts />

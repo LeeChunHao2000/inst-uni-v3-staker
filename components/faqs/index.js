@@ -64,7 +64,7 @@ export default function FAQs() {
           <h2>
             <AccordionButton>
               <Box flex="1" textAlign="left" fontWeight="600">
-                How do I stake my RBN tokens?
+                How do I stake my INST tokens?
               </Box>
               <AccordionIcon />
             </AccordionButton>
@@ -77,9 +77,9 @@ export default function FAQs() {
               <ListItem>
                 {`Go to the  `}
                 <Link
-                  href="https://app.uniswap.org/#/add/ETH/0x6123B0049F904d730dB3C36a31167D9d4121fA6B/10000"
+                  href="https://app.uniswap.org/#/add/ETH/0x6f40d4a6237c257fff2db00fa0510deeecd303eb/10000"
                   isExternal
-                >{`Uniswap v3 "Add Liquidity" page for RBN & ETH.`}</Link>
+                >{`Uniswap v3 "Add Liquidity" page for INST & ETH.`}</Link>
               </ListItem>
               <ListItem>{`Select a range for your liquidity and supply the tokens.`}</ListItem>
               <ListItem>{`Click "Connect Wallet" and choose a wallet provider.`}</ListItem>
