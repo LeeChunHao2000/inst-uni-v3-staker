@@ -33,7 +33,7 @@ const Footer = () => {
       >
         <Box textAlign={['center', 'center', 'initial']}>
           <Text fontWeight="bold" fontSize="md">
-            staker.projects.sh
+            inst.brendanc.me
           </Text>
           <Text fontSize="sm" color="gray.500">
             A simple UI for Uniswap V3 staking programs

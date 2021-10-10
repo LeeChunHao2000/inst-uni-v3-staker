@@ -24,7 +24,7 @@ const Layout = ({ children, title }) => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:creator" content="@ChunHaoLee" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="" />
+        <meta property="og:url" content="inst.brendanc.me" />
         <meta property="og:title" content="Instadapp (INST) staker" />
         <meta
           property="og:description"
