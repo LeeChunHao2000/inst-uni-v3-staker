@@ -169,9 +169,9 @@ export default function Home() {
                   <Th>Token ID</Th>
                   <Th>Location</Th>
                   <Th>In Range?</Th>
-
                   <Th>% of Pool</Th>
-                  <Th isNumeric>Rewards</Th>
+                  <Th>Fees</Th>
+                  <Th>Rewards</Th>
                   <Th>Actions</Th>
                 </Tr>
               </Thead>
@@ -180,7 +180,15 @@ export default function Home() {
                 <Tbody>
                   {positions.map((position) => (
                     <Tr key={position.id}>
-                      <Td>#{position.id}</Td>
+                      <Td fontSize="sm">
+                        <Link
+                          textDecoration="underline"
+                          isExternal
+                          href={`https://app.uniswap.org/#/pool/${position.id}`}
+                        >
+                          #{position.id}
+                        </Link>
+                      </Td>
                       <Td>
                         {!position.deposited && (
                           <Badge rounded="full" px="2" colorScheme="blue">
@@ -215,8 +223,6 @@ export default function Home() {
                       </Td>
                       <Td>
                         <Badge rounded="full" px="2" colorScheme="blue">
-                          {/* {position.liquidity /
-                            (position.tickUpper - position.tickLower)} */}
                           {(
                             (position.liquidity / pool.liquidity) *
                             100
@@ -224,8 +230,18 @@ export default function Home() {
                           %
                         </Badge>
                       </Td>
+                      <Td fontSize="sm" w="fit-content">
+                        <Box>
+                          {commas(position.fees0)} <b>{pool.symbol}</b>
+                        </Box>
+                        <Box>
+                          {commas(position.fees1)} <b>WETH</b>
+                        </Box>
+                      </Td>
 
-                      <Td isNumeric>{commas(position.reward / 1e18)}</Td>
+                      <Td fontSize="sm">
+                        {commas(position.reward / 1e18)} {pool.symbol}
+                      </Td>
                       <Td isNumeric>
                         <Flex>
                           {!position.deposited && (
